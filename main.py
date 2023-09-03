@@ -1,6 +1,7 @@
 from PyQt5.QtWidgets import *
 import random
 import base
+import Menuwindow
 
 app = QApplication([])
 window = QWidget()
@@ -65,7 +66,7 @@ def showResult():
 
 
 answerBth.clicked.connect(showResult)
-
+menuBth.clicked.connect(Menuwindow.menuWind)
 window.setLayout(mainLine)
 window.show()
 app.exec()
